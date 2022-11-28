@@ -1,0 +1,1060 @@
+
+body{
+    background-color: black;
+    background-image: url(img/fondo.png);
+    background-size:contain;
+}
+
+.api{
+    display: flex;
+    justify-content: right;
+}
+
+
+@media screen and (max-width: 640px) {
+    .fecha{
+        text-align: center;
+        color: #E83138;
+        margin-right: 2rem;
+        font-size: small;
+    } 
+
+    body{
+        min-width: 320px;
+        max-width: 640px;
+    }
+
+     /* Encabezado */
+    header{
+        height: 230px;
+    }
+    
+    
+    .perro{
+        height: 74px;
+        width: 76px;
+        float:left;
+        margin-top: 3px;
+        margin-left: 5px;
+        margin-right: 1px;   
+    }
+
+    .logo{
+        height: 96px;
+        width: 128px;   
+    }
+
+    .hamb{
+        height: 85px;
+        width: 100px;
+        float: right;
+        margin-right: 2.3px;   
+    }
+
+    #imgs {    
+        text-align: center;    
+    } 
+
+    /* .gif{
+        height: 500px;
+        width: 300px;
+        margin-left: 800px;
+        margin-top: -600px;
+    } */
+
+    nav {
+        margin: 0%;
+        margin-top: -30px;
+        padding: 0%;
+        box-sizing:border-box; 
+        font-size: 0%;
+        cursor:context-menu;
+        justify-content: space-between;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    nav a {    
+        text-decoration: none;
+        color: #E83138;
+        font-size: 18px;
+    }
+
+    nav li {
+        float:left;
+        width: 30%;
+        padding: 8px 18px;
+        background-color: #000;
+        border: 2px solid #000;
+        text-align: center;
+        color: #f8f20A;
+        box-shadow: 0 4px 6px #E83138;       
+    }
+
+    nav li:hover {
+        background-color: #f8f20A;
+        color: #000;
+    }
+    
+    main{
+        width: 100%;
+    }
+
+     /* Página Index */
+    .slider-index {
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    ul{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    .slider-index ul {
+        justify-content: center;
+        display: flex;
+        animation: slide 20s infinite linear;
+        width: 400%;
+    }
+
+
+    .slider-index li {
+        justify-content: center;
+        list-style:none;
+        width: 90%;
+    }
+
+    .slider-index img {
+        justify-content: center;
+        width: 90%;
+        height: 170px;
+    }
+
+    @keyframes slide {
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+
+        25% {margin-left: -100%;}
+        45% {margin-left: -100%;}
+
+        50% {margin-left: -200%;}
+        70% {margin-left: -200%;}
+
+        75% {margin-left: -300%;}
+        100% {margin-left: -300%;}
+    }
+
+     /* Página menú */
+
+    .secmenu{
+        display: inline;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .opcionmenu{
+        width: 280px;
+        margin: 6px;
+        background-color: #000;
+        border: 2px solid #000;
+        text-align: center;
+        box-shadow: 0 2px 4px #E83138;
+    }
+
+    
+    /* Página Pedido */
+
+    .titulohacepedido{
+        color: #FFFFFF;
+        text-align: center;
+        
+    }
+    .secpedido{
+        background-color: #FFFFFF;
+        opacity: 0.7;
+        width: 100%;
+        padding: 1px 1px;
+        border: 1px solid #E83138;  
+        box-shadow: 0 7px 10px #E83138;
+    }
+
+    .titulopedido{
+        margin-left: 20px;
+        color: #E83138;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .divpedido{
+        margin-left:5px;
+        display: inline-block;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .pedido{
+        font-size: 18px;
+    }
+
+    .pedidoinput{
+        font-size: 15px;
+    }
+
+    .classeleccion{
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    .eleccion{
+        display: inline-block;
+        margin: 0.5rem;
+    }
+
+    .divboton{
+        text-align: center;
+    }
+    
+  
+    /* Página Ubicación */
+
+    .div1{
+        width: 16rem;
+        height: 4rem;
+        padding: 8px 18px;
+        background-color: #000;
+        border: 2px solid #000;
+        margin: none;
+        /* margin-left: 200px; */
+        text-align: center;
+        color: #FFFFFF;
+        box-shadow: 0 4px 6px #f8f20A; 
+    }
+
+
+    .textdiv1{
+        font-size: 1.3em;
+        margin: none;
+        vertical-align: middle;
+    }
+
+    .div2{
+        width: 17rem;
+        height: 5.5rem;
+        padding: 8px 18px;
+        background-color: #000;
+        border: 2px solid #000;
+        /* margin-left: 680px; */
+        text-align: right;
+        justify-content: right;
+        justify-items: right;
+        color: #FFFFFF;
+        box-shadow: 0 4px 6px #f8f20A; 
+    }
+
+    .telefono{
+        text-decoration: none;
+        color: #f8f20A;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .telef{
+        text-decoration: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 1.4 em;
+    }
+
+    .div3{
+        text-align: center;
+        font-size: 1.7rem;
+        color: #FFFFFF;
+        
+    }
+
+    .mapa{
+        text-align: center;
+    }    
+
+     /* Píe de Página */
+
+     footer{
+        display: flex;
+        margin: 0;
+        margin-top: 0.3rem;
+        padding: 1rem;
+    }
+
+    .secfooter{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 5px;
+        justify-content: center;
+    }
+
+    .seguinos{
+        width: 100%;
+        height: 50%;
+        font-size: 1.3em;
+        font-weight:600;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0px;
+        
+    }
+
+    .divpedidos{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        margin: 50px 0px 20px 0px ;
+    }
+
+    .button {
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 5px 9px;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        
+    }
+    
+    .button:hover {
+        color: rgb(146, 245, 146);
+        font-size: 25px;    
+    }
+
+    .buttonpedidos:hover {
+        color: rgb(215, 61, 27);
+        font-size: 25px;    
+    }
+
+    .buttonpedidos {
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 5px 9px;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 900px) {
+    .fecha{
+        text-align: center;
+        color: #E83138;
+        margin-right: 2rem;
+        font-size: medium;
+    } 
+
+    body{
+        min-width: 640px;
+        max-width: 900px;
+    }
+
+     /* Encabezado */
+    header{
+        height: 430px;
+    }
+    
+    
+    .perro{
+        height: 120px;
+        width: 122px;
+        float:left;
+        margin-top: 3px;
+        margin-left: 5px;
+        margin-right: 1px;   
+    }
+
+    .logo{
+        height: 250px;
+        width: 280px;   
+    }
+
+    .hamb{
+        height: 145px;
+        width: 170px;
+        float: right;
+        margin-right: 2.3px;  
+        align-items: center; 
+    }
+
+    #imgs {    
+        text-align: center;    
+    } 
+
+    /* .gif{
+        height: 500px;
+        width: 300px;
+        margin-left: 800px;
+        margin-top: -600px;
+    } */
+
+    nav {
+        margin: 0%;
+        margin-top: -30px;
+        padding: 0%;
+        box-sizing:border-box; 
+        font-size: 0%;
+        cursor:context-menu;
+        justify-content: space-between;
+        text-align: center;
+        margin-left: 80px;
+    }
+
+    nav a {    
+        text-decoration: none;
+        color: #E83138;
+        font-size: 32px;
+    }
+
+    nav li {
+        float:left;
+        width: 35%;
+        padding: 8px 18px;
+        background-color: #000;
+        border: 2px solid #000;
+        text-align: center;
+        color: #f8f20A;
+        box-shadow: 0 4px 6px #E83138;       
+    }
+
+    nav li:hover {
+        background-color: #f8f20A;
+        color: #000;
+    }
+    
+    main{
+        width: 100%;
+    }
+
+     /* Página Index */
+    .slider-index {
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    ul{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    .slider-index ul {
+        justify-content: center;
+        display: flex;
+        animation: slide 20s infinite linear;
+        width: 400%;
+        
+    }
+
+
+    .slider-index li {
+        justify-content: center;
+        text-align: center;
+        list-style:none;
+        width: 90%;
+    }
+
+    .slider-index img {
+        justify-content: center;
+        width: 90%;
+        height: 300px;
+    }
+
+    @keyframes slide {
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+
+        25% {margin-left: -100%;}
+        45% {margin-left: -100%;}
+
+        50% {margin-left: -200%;}
+        70% {margin-left: -200%;}
+
+        75% {margin-left: -300%;}
+        100% {margin-left: -300%;}
+    }
+
+     /* Página menú */
+
+    .secmenu{
+        display: inline;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .opcionmenu{
+        width: 80%;
+        margin: 6px;
+        background-color: #000;
+        border: 2px solid #000;
+        text-align: center;
+        box-shadow: 0 2px 4px #E83138;
+    }
+
+    
+    /* Página Pedido */
+
+    .titulohacepedido{
+        color: #FFFFFF;
+        text-align: center;
+        
+    }
+    .secpedido{
+        background-color: #FFFFFF;
+        opacity: 0.7;
+        width: 85%;
+        margin-left: 7.5%;
+        padding: 1px 1px;
+        border: 1px solid #E83138;  
+        box-shadow: 0 7px 10px #E83138;
+    }
+
+    .titulopedido{
+        margin-left: 20px;
+        color: #E83138;
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .divpedido{
+        margin-left:5px;
+        display: inline-block;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    .pedido{
+        font-size: 1.2em;
+    }
+
+    .pedidoinput{
+        font-size: 1.1em;
+    }
+
+    .classeleccion{
+        display: inline-block;
+        margin-left: 1.2rem;
+    }
+
+    .eleccion{
+        display: inline-block;
+        font-size: 1.2em;
+        margin: 0.5rem;
+    }
+
+    .divcomentario{
+        text-align: center;
+    }
+
+    #comentario{
+        font-size: 1.1em;
+    }
+
+    .divboton{
+        text-align: center;
+    }
+
+    .botonpedido{
+        text-align: center;
+        font-size: 1.4em;
+    }
+    
+  
+    /* Página Ubicación */
+
+    .div1{
+        width: 16rem;
+        height: 7rem;
+        padding: 8px 18px;
+        background-color: #000;
+        border: 2px solid #000;
+        margin: none;
+        margin-left: 40px;
+        text-align: center;
+        color: #FFFFFF;
+        box-shadow: 0 4px 6px #f8f20A; 
+    }
+
+
+    .textdiv1{
+        font-size: 1.6em;
+        margin: none;
+        vertical-align: middle;
+    }
+
+    .div2{
+        width: 17rem;
+        height: 5.5rem;
+        padding: 8px 18px;
+        background-color: #000;
+        border: 2px solid #000;
+        margin-left: 268px;
+        text-align: right;
+        justify-content: right;
+        justify-items: right;
+        color: #FFFFFF;
+        box-shadow: 0 4px 6px #f8f20A; 
+    }
+
+    .telefono{
+        text-decoration: none;
+        color: #f8f20A;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .telef{
+        text-decoration: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 1.6em;
+    }
+
+    .div3{
+        text-align: center;
+        font-size: 1.7rem;
+        color: #FFFFFF;
+        
+    }
+
+    .mapa{
+        text-align: center;
+    }    
+
+     /* Píe de Página */
+
+     footer{
+        display: flex;
+        margin: 0;
+        margin-top: 0.3rem;
+        padding: 1rem;
+    }
+
+    .secfooter{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 5px;
+        justify-content: center;
+    }
+
+    .seguinos{
+        width: 100%;
+        height: 50%;
+        font-size: 1.9em;
+        font-weight:600;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0px;
+        
+    }
+
+    .divpedidos{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        margin: 50px 0px 20px 0px ;
+    }
+
+    .button {
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 5px 9px;
+        text-decoration: none;
+        font-size: 1.9em;
+        cursor: pointer;
+        border-radius: 10px;
+        
+    }
+    
+    .button:hover {
+        color: rgb(146, 245, 146);
+        font-size: 2.2em;    
+    }
+
+    .buttonpedidos:hover {
+        color: rgb(215, 61, 27);
+        font-size: 2.2em;    
+    }
+
+    .buttonpedidos {
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 5px 9px;
+        text-decoration: none;
+        font-size: 1.9em;
+        cursor: pointer;
+        border-radius: 10px;
+        
+    }
+    
+}
+
+@media screen and (min-width: 900px) {
+    .fecha{
+        text-align: center;
+        color: #E83138;
+        margin-right: 5rem;
+    } 
+
+    /* Encabezado */
+
+    .perro{
+        height: 190px;
+        width: 200px;
+        float:left;
+        margin-top: 30px;
+        margin-left: 50px;
+        margin-right: 10px;   
+    }
+
+    .logo{
+        height: 260px;
+        width: 380px;   
+    }
+
+    .hamb{
+        height: 250px;
+        width: 300px;
+        float: right;
+        margin-right: 23px;   
+    }
+
+    #imgs {    
+        text-align: center;    
+    } 
+
+    .gif{
+        height: 500px;
+        width: 300px;
+        margin-left: 800px;
+        margin-top: -600px;
+    }
+
+    nav {
+        margin: 0%;
+        margin-top: -30px;
+        padding: 0%;
+        box-sizing:border-box; 
+        font-size: 0%;
+        cursor:context-menu;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    nav a {    
+        text-decoration: none;
+        color: #E83138;
+        font-size: 25px;
+    }
+
+    nav li {
+        float:left;
+        width: 20%;
+        padding: 8px 18px;
+        background-color: #000;
+        border: 2px solid #000;
+        text-align: center;
+        color: #f8f20A;
+        box-shadow: 0 4px 6px #E83138;       
+    }
+
+    nav li:hover {
+        background-color: #f8f20A;
+        color: #000;
+    }
+
+    ul{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+    
+    .slider-index {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .slider-index ul {
+        justify-content: center;
+        display: flex;
+        animation: slide 20s infinite linear;
+        width: 400%;
+    }
+
+    .slider-index li {
+        justify-content: center;
+        list-style:none;
+        width: 100%;
+    }
+
+    .slider-index img {
+        justify-content: center;
+        width: 900px;
+        height: 350px;
+    }
+
+    @keyframes slide {
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+
+        25% {margin-left: -100%;}
+        45% {margin-left: -100%;}
+
+        50% {margin-left: -200%;}
+        70% {margin-left: -200%;}
+
+        75% {margin-left: -300%;}
+        100% {margin-left: -300%;}
+    }
+
+
+
+    .secmenu{
+        display: flex;
+    justify-content: center;
+    
+    }
+
+    .opcionmenu{
+        width: 360px;
+        margin: 12px;
+        background-color: #000;
+        border: 2px solid #000;
+        text-align: center;
+        box-shadow: 0 2px 4px #E83138;
+    }
+
+   
+    /* Página pedidos */
+
+    .secpedido{
+        margin-left: 19rem;
+        /* align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center; */
+        background-color: #FFFFFF;
+        opacity: 0.7;
+        width: 48%;
+        padding: 8px 18px;
+        border: 2px solid #E83138;  
+        box-shadow: 0 7px 10px #E83138;
+    }
+
+    .titulopedido{
+        margin-left: 20px;
+        color: #E83138;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .divpedido{
+        margin-left: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .pedido{
+        font-size: 18px;
+    }
+
+    .pedidoinput{
+        font-size: 15px;
+    }
+
+    .divcomentario{
+        text-align: center;
+    }
+
+    #comentario{
+        font-size: 1.1em;
+    }
+
+    .classeleccion{
+        display: flex;
+        margin-left: 1rem;
+    }
+
+    .eleccion{
+        display: inline-block;
+        margin: 0.5rem;
+    }
+
+    .divboton{
+        text-align: center;
+    }
+
+    /* Página Ubicación */
+    
+    .div1{
+        width: 16rem;
+        height: 4rem;
+        padding: 8px 18px;
+        background-color: #000;
+        border: 2px solid #000;
+        margin: none;
+        margin-left: 200px;
+        text-align: center;
+        color: #FFFFFF;
+        box-shadow: 0 4px 6px #f8f20A; 
+    }
+
+
+    .textdiv1{
+        font-size: 1.3em;
+        margin: none;
+        vertical-align: middle;
+    }
+
+    .div2{
+        width: 17rem;
+        height: 5.5rem;
+        padding: 8px 18px;
+        background-color: #000;
+        border: 2px solid #000;
+        margin-left: 680px;
+        text-align: right;
+        justify-content: right;
+        justify-items: right;
+        color: #FFFFFF;
+        box-shadow: 0 4px 6px #f8f20A; 
+    }
+
+    .telefono{
+        text-decoration: none;
+        color: #f8f20A;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .telef{
+        text-decoration: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 1.4 em;
+    }
+
+    .div3{
+        text-align: center;
+        font-size: 1.7rem;
+        color: #FFFFFF;
+        
+    }
+
+    .mapa{
+        text-align: center;
+    }
+
+    .titulohacepedido{
+        color: #FFFFFF;
+        text-align: center;
+        
+    }
+
+    /* Pie de Página */
+
+    footer{
+        display: flex;
+        margin: 0;
+        margin-top: 0.3rem;
+        padding: 1rem;
+    }
+
+    .secfooter{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+        justify-content: center;
+    }
+
+
+    .seguinos{
+        width: 50%;
+        font-size: 1.3em;
+        font-weight:600;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 20px;
+        
+    }
+
+    .divpedidos{
+        display:flex;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        margin: 50px 20px 20px 20px ;
+    }
+
+
+
+    .button {
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 5px 9px;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        
+    }
+    
+    .button:hover {
+        color: rgb(146, 245, 146);
+        font-size: 25px;    
+    }
+
+    .buttonpedidos:hover {
+        color: rgb(215, 61, 27);
+        font-size: 25px;    
+    }
+
+    .buttonpedidos {
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 5px 9px;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        
+    }
+
+}

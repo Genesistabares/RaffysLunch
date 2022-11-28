@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacé tu pedido!</title>
+    <link rel="stylesheet" href="style-index.css">
+    <script src="https://kit.fontawesome.com/e1957b56ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header> 
+        <script src="java/pedidos.js"></script>
+        
+        <div class="api">
+            <div class="fecha">
+                <p> Fecha:
+                    <span id="fecha" class="apifecha"></span> 
+                    <script src="java/fecha.js"></script>
+                </p>
+            </div>
+        </div>
+        <div id="imgs">
+            <img class= "perro" src="img/perro.png" alt="">
+            <a href="index.html"><img class= "logo" src="img/logo.png" alt=""></a>
+            <img class= "hamb" src="img/hamb.png" alt="">
+        </div>
+        <br>
+        <nav>           
+            
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                           
+            </ul>
+            <!-- <link rel="icon" class="opiniones" href="opiniones.html"> -->
+          
+        </nav>
+        <br><br>
+            
+    </header>
+    <main>
+        <br>
+        <h1 class="titulohacepedido">¡Hacé tu pedido!</h1>
+        <br>
+        <Section class="secpedido">
+            <form action="" method="" target="_blank">
+                <h3 class="titulopedido">Datos</h3>
+                <div class="divpedido">
+                    <label for="nombre" class="pedido">Nombre:</label>
+                    <input type="text" name="nombre" 
+                    id="nombre" class="pedidoinput" required placeholder="Ingrese su nombre">
+                    <br><br>
+                    <label for="telefono" class="pedido">Teléfono:</label>
+                    <input type="tel" name="telefono" 
+                    id="nombre" class="pedidoinput" required placeholder="Ingrese número telefónico">
+                    <br><br>
+                    <label for="direccion" class="pedido">Dirección:</label>
+                    <input type="text" name="direccion" 
+                    id="direccion" class="pedidoinput" required placeholder="Ingrese su dirección...">
+                     
+                </div>
+                <br> 
+                <h3 class="titulopedido">Tipo de Pedido</h3>
+                <div class="divpedido">
+                    <input type="radio" name="tipodepedido" id="retirar" class="pedidoinput" value="retirar">
+                    <label for="retirar" class="pedido">Para retirar en el local</label>
+                    <br>
+                    <input type="radio" name="tipodepedido" id="delivery" class="pedidoinput" value="delivery">
+                    <label for="delivery" class="pedido">Envío a domicilio</label>
+                </div>
+                <br>
+                <h3 class="titulopedido">¿Qué vas a Pedir?</h3>
+                <div class="classeleccion">
+                    <div class="eleccion">
+                        <input type="checkbox" name="quepedir" id="pancho" class="pedidoinput" value="pancho">
+                        <label for="pancho" class="pedido">Pancho</label>
+                        <br>
+                        <input type="checkbox" name="quepedir" id="hclasica" class="pedidoinput" value="hclasica">
+                        <label for="hclasica" class="pedido">Hamburguesa Clásica</label>
+                        <br>
+                        <input type="checkbox" name="quepedir" id="baconburger" class="pedidoinput" value="baconburger">
+                        <label for="baconburger" class="pedido">Bacon burger</label>
+                        <br>
+                        <input type="checkbox" name="quepedir" id="completapollo" class="pedidoinput" value="completapollo">
+                        <label for="completapollo" class="pedido">Completa de Pollo</label>
+                    </div>
+                    
+                    <div class="eleccion">
+                        <input type="checkbox" name="quepedir" id="perroclasico" class="pedidoinput" value="perroclasico">
+                        <label for="perroclasico" class="pedido">Perro Clasico</label>
+                        <br>
+                        <input type="checkbox" name="quepedir" id="milaburger" class="pedidoinput" value="milaburger">
+                        <label for="milaburger" class="pedido">Milaburger</label>
+                        <br>
+                        <input type="checkbox" name="quepedir" id="choriburger" class="pedidoinput" value="choriburger">
+                        <label for="choriburger" class="pedido">Choriburger</label>
+                        <br>
+                        <input type="checkbox" name="quepedir" id="completacarne" class="pedidoinput" value="completacarne">
+                        <label for="completacarne" class="pedido">Completa de Carne</label>
+                    </div>
+                    
+                    <div class="eleccion">
+                        <input type="checkbox" name="quepedir" id="perroexplosivo" class="pedidoinput" value="perroexplosivo">
+                        <label for="perroexplosivo" class="pedido">Perro Explosivo</label>
+                        <br>
+                        <input type="checkbox" name="quepedir" id="rafysburger" class="pedidoinput" value="rafysburger">
+                        <label for="rafysburger" class="pedido">Rafysburger</label>
+                        <br>
+                        <input type="checkbox" name="quepedir" id="choripollo" class="pedidoinput" value="choripollo">
+                        <label for="choripollo" class="pedido">Choripollo</label>
+                        <br>
+                        <input type="checkbox" name="quepedir" id="hmixta" class="pedidoinput" value="hmixta">
+                        <label for="hmixta" class="pedido">Hamburguesa Mixta</label>
+                    </div>
+                </div>
+                <br><br>
+                <div class="divcomentario">
+                    <textarea name="comentario" id="comentario" cols="60" rows="7">Escribe tu comentario</textarea> 
+                </div>
+                <br><br><br>
+                <div class="divboton">
+                    <div>
+                      <button type="submit" class="botonpedido">Enviar</button>
+                      &nbsp &nbsp
+                      <button type="reset" class="botonpedido">Borrar</button>
+                    </div>
+                    <br>
+                </div>
+            </form>
+
+        </Section>
+        
+           
+        <script src="Java/pedidos.js"></script>
+    </main>
+    <footer>
+        <section class="secfooter">
+            <div class="seguinos">
+                <p>Seguinos en nuestras Redes Sociales:</p>
+                <i class="fa-solid fa-arrow-down fa-xl fa-beat" style="color: yellow;"></i>
+                <br><br>           
+                <a class="logoinstagram" href="https://www.instagram.com/raffyslunch/"><i class="fa-brands fa-instagram fa-xl fa-beat" style="color: #ffffff;"></i></a>  
+                &nbsp &nbsp 
+                <a href="https://www.facebook.com/raffyslunch/"><i class="fa-brands fa-square-facebook fa-xl fa-beat" style="color: #ffffff"></i></a>
+            
+            </div>
+            <br>
+            <div class="divpedidos">
+                
+                <a href="https://api.whatsapp.com/send?phone=5491127108478&text=Hola!%20Quisiera%20hacer%20un%20pedido." class="button"><img src="img/whatsapplogo.png" width="60" height="60" /> <br> ¡Hacé tu pedido AQUÍ! </a>
+                
+                <a href="https://www.pedidosya.com.ar/restaurantes/pilar/raffy-s-lunch-menu" class="buttonpedidos"><img src="img/pedidosya.png" width="60" height="60" border-radius= "10px"; /> <br> ¡Hacé tu pedido AQUÍ! </a>
+                
+            </div>
+                    
+        </section>
+    
+    
+    </footer>
+
+</body>
+</html>
